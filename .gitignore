@@ -99,3 +99,9 @@ ENV/
 
 # mypy
 .mypy_cache/
+.idea
+train_dir
+object_detection
+*.record
+*.pbtxt
+faster_rcnn_resnet101_coco_2018_01_28
