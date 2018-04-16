@@ -105,3 +105,5 @@ object_detection
 *.record
 *.pbtxt
 faster_rcnn_resnet101_coco_2018_01_28
+eval_dir
+
