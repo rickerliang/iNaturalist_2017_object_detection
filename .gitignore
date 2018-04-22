@@ -106,4 +106,8 @@ object_detection
 *.pbtxt
 faster_rcnn_resnet101_coco_2018_01_28
 eval_dir
-
+_home_lyk_machine_learning_Supervised_Learning_iNaturalist_image_val__7_dataset.txt
+checkpoint/
+faster_rcnn_resnet50_coco_2018_01_28/
+output_inference_graph/
+to_freeze/

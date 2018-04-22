@@ -142,10 +142,14 @@ def create_tf_example(image,
         ymax.append(float(y + height) / image_height)
         is_crowd.append(object_annotations['iscrowd'])
         category_id = int(object_annotations['category_id'])
-        # label map id starts at 1
-        category_ids.append(category_id + 1)
-        category_names.append(
-            category_index[category_id]['name'].encode('utf8'))
+        
+        # convert all categories to category_species = 1
+        #category_ids.append(category_id)
+        category_ids.append(1)
+        #category_names.append(
+        #    category_index[category_id]['name'].encode('utf8'))
+        # convert category name to species
+        category_names.append('species')
         area.append(object_annotations['area'])
 
         if include_masks:

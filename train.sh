@@ -1,2 +1,2 @@
 export PYTHONPATH=$PYTHONPATH:/home/lyk/machine_learning/Supervised_Learning/tensorflow_model/research/:/home/lyk/machine_learning/Supervised_Learning/tensorflow_model/research/slim
-CUDA_VISIBLE_DEVICES=0 python object_detection/train.py --logtostderr --pipeline_config_path=faster_rcnn_resnet101_coco.config --train_dir=train_dir
+python object_detection/train.py --num_clones=2 --ps_tasks=1 --logtostderr --pipeline_config_path=faster_rcnn_resnet50_coco.config --train_dir=train_dir
